@@ -1,0 +1,605 @@
+body{
+    background-image: linear-gradient(45deg, #1482d6, #70C0E5);
+    background-repeat:no-repeat;
+    height: 10650px;
+    font-family: system-ui;
+}
+/*header*/
+header{
+    display: grid;
+}
+header img{
+    height: 355px;
+    width: 983px;
+    margin: auto;
+    border-radius: 60px;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+}
+/*main*/
+/*our vision*/
+.our__vision__container{
+    position: relative;
+    top: 650px;
+}
+.our__vision__container h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 88px;
+    color: white;
+    border-bottom: 5px solid silver;
+    width: 500px;
+}
+.our__vision{
+    width: 850px;
+    margin: 0 auto;
+}
+.our__vision p{
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+}
+/*work__plan*/
+.work__plan__container{
+    display: grid;
+    position: relative;
+    top: 475px;
+}
+.work__plan__container h1{
+    font-size: 85px;
+    text-align: center;
+    border-bottom: 5px outset white;
+    margin: 0 auto;
+    width: 817px;
+    color: white;
+}
+.work__plan{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.work__plan a{
+    height: 275px;
+    width: 370px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.work__plan a p{
+    font-size: 42px;
+    position: relative;
+    top: 5px;
+}
+.work__plan a img{
+    height: 115px;
+    width: 115px;
+    position: relative;
+    top: 30px;
+    background: #73ddff;
+    padding: 15px;
+    border-radius: 40px;
+}
+/*events__pages*/
+.event__page{
+    height: 1145px;
+}
+.event__header{
+    display: grid;
+}
+.event__header img{
+    margin: auto;
+    height: 185px;
+    width: 345px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 5px;
+}
+.event__header h1{
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    border-bottom: 2px solid silver;
+    position: relative;
+    top: 20px;
+}
+.text{
+    position: relative;
+    top:  20px;
+    margin:20px;
+}
+.text p{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+/*work__plan pages*/
+.work__plan__pages{
+    height: 5000px;
+}
+.title__pages{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 10px solid silver;
+    font-size: 95px;
+    position: relative;
+    top: 160px;
+}
+.link__2__index{
+    position: relative;
+    right: 25px;
+    top: -50px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #ff6a6a;
+    padding: 25px;
+    font-size: 25px;
+    border-radius: 25px;
+}
+.plan{
+  position: relative;
+  top: 200px;
+}  
+.plan p{
+    border-radius: 50px;
+    background: linear-gradient(145deg, #476ab0, #557ed2);
+    box-shadow: 11px 11px 0px #4465a9, -11px -11px 0px #5a87df;
+    color: white;
+    margin: 0 auto;
+    width: 720px;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 45px;
+}
+.plan h3{
+    font-size: 55px;
+    color: white;
+    position: relative;
+    top: 30px;
+}
+.plan ul{
+    border-radius: 50px;
+    background: #4fc463;
+    box-shadow: inset 15px 15px 30px #409f50, inset -15px -15px 30px #5ee976;
+    padding: 75px;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.plan ul li{
+    font-size: 35px;
+}
+/*why to choose me*/
+.why__to__choose__me__container{
+    position: relative;
+    top: 400px;
+    text-align: center;
+}
+.why__to__choose__me__container h2{
+    font-size: 65px;
+    color: white;
+    width: 686px;
+    margin: 0 auto;
+    border-bottom: 4px outset silver;
+}
+.why__to__choose__me img{
+    height: 1615px;
+    width: 950px;
+    position: relative;
+    top: 25px;
+}
+/*news*/
+.calendar-container {
+    position: relative;
+    width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    top: 780px;
+    border-radius: 40px;
+    background: #8cdbff;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.calendar-header h1{
+    font-size: 50px;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 390px;
+    text-align: center;
+    margin: 35px auto;
+    bottom: 10px;
+}
+.calendar-header button{
+    font-size: 50px;
+    color: white;
+    background: black;
+    border-radius: 20px;
+}
+#nextBtn{
+    transform: scaleX(-1);
+}
+.note{
+    position: relative;
+    bottom: 30px;
+    color: red;
+    font-weight: bolder;
+    font-size: 43px;
+
+}
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+}
+
+.calendar-day {
+    padding: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    background: #5cbddc;
+    border-radius: 30px;
+}
+
+.current-day {
+    background-color: black;
+}
+
+.event-list {
+    margin-top: 50px;
+    border-top: 2px solid white;
+}
+.event-list h2{
+    color: white;
+    font-size: 45px;
+    border-bottom: 2px solid;
+    width: 167px;
+    position: relative;
+    bottom: 15px;
+} 
+
+.events__child {
+    border-bottom: 2px solid black;
+    margin-bottom: 68px;
+}
+.events__child p{
+    font-size: 31.5px;
+    font-weight: bolder;
+    position: relative;
+    bottom: 45px;
+}
+.events__child a{
+    
+position: relative;
+    
+bottom: 40px;
+    
+text-decoration: none;
+    
+background: #fe4c4c;
+    
+color: white;
+    
+padding: 10px;
+    
+border-radius: 18px;
+    
+font-weight: bold;
+}
+#no__border__event{
+    border-bottom: none;
+}
+.join__tot__container{
+    text-align: center;
+    position: relative;
+    top: 900px;
+}
+.join__tot{
+    background-color: white;
+    color: red;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-decoration: none;
+}
+.join__tot p{
+    margin: auto;
+    font-size: 46px;
+    font-weight: bolder;
+}
+.join__tot img{
+    margin:  auto;
+    height: 245px;
+    width: 380px;
+}
+/*events__page*/
+#happend__page{
+    position: relative;
+    top: 280px;
+}
+#back__index{
+    position: relative;
+    top: 130px;
+}
+/*events that happend*/
+.happend{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 1150px;
+ }
+ .happend__title{
+    margin: 0 auto;
+    font-size: 65px;
+    color: white;
+    border-bottom: 2px solid silver;
+    position: relative;
+    bottom: 100px;
+ }
+ .happend div{
+    display: flex;
+    margin: 0 auto;
+    align-content: flex-end;
+ }
+   .happend div img{
+    height: 340px;
+    width: 383px;
+   }
+   .happend div div{
+      display: flex;
+      flex-direction: column;
+      background: blue;
+      height: 339px;
+   }
+   .happend div div h2{
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    position: relative;
+    right: 10px;
+    font-size: 47px;
+    bottom: 20px;
+   }
+   .happend div div p{
+    font-size: 35px;
+    position: relative;
+    bottom: 75px;
+    right: 10px;
+    color: #cbc7c7;
+    font-weight: bold;
+    width: 571px;
+   }
+   .happend div div a{
+    position: relative;
+    bottom: 85px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: #db5d5d;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    right: 15px;
+    font-size: 35px;
+    width: 240px;
+    text-decoration: none;
+   }
+   .more_events{
+    
+text-align: center;
+    
+font-size: 50px;
+    
+text-decoration: none;
+    
+font-weight: bolder;
+    
+color: white;
+    
+background: #4f4fd4;
+    
+width: 600px;
+    
+margin: 0 auto;
+    
+position: relative;
+    
+top: 60px;
+    
+padding: 20px;
+    
+border-radius: 25px;
+   }
+/*footer*/
+footer{
+    position: fixed;
+    bottom: 0px;
+    display: grid;
+    background-color: rgb(0, 0, 116);
+    z-index: 100;
+    margin: 0 auto;
+    right: 0px;
+    width: 100%;
+}
+footer h3{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+footer ul{
+    margin: auto;
+    display: flex;
+    gap: 115px;
+    list-style-type: none;
+    position: relative;
+    top: 25px;
+    left: 45px;
+}
+footer ul li a img{
+    height: 120px;
+    width: 125px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 1000px)
+{
+    body{
+        height: 8500px;
+    }
+    header img{
+        width: 1500px;
+        height: 400px;
+    }
+    .why__to__choose__me__container{
+        position: relative;
+        top: 490px;
+    }
+    .why__to__choose__me__container h2{
+        font-size: 50px;
+        width: 525px;
+    }
+    .work__plan__container{
+        position: relative;
+        top: 600px;
+    }
+    .work__plan__container h1{
+        font-size: 65px;
+        width: 635px;
+    }
+    .work__plan{
+        width: 90%;
+        
+    }
+    .work__plan a{
+        height: 200px;
+        width: 250px;
+    }
+    .work__plan a img{
+        position: relative;
+        top: 20px;
+        height: 70px;
+        width: 65px;
+    }
+    .work__plan a p{
+        font-size: 25px;
+        position: relative;
+        top: 15px;
+    }
+    .rest__of__page{
+        position: relative;
+        top: 150px;
+    }
+    .our__vision__container h1{
+        font-size: 70px;
+        width:370px;
+    }
+    .our__vision p{
+        font-size: 25px;
+        
+    }
+    .calendar-container{
+        width: 680px;
+    }
+    .note{
+        font-size: 35px;
+        margin-left:190px
+    }
+    .join__tot{
+        position: relative;
+        bottom: 45px;
+    }
+    .happend {
+        position: relative;
+        top: 1030px;
+    }
+    .happend__title{
+        position: relative;
+        top: -20px;
+    }
+    .happend div div{
+        width: 588px;
+    }
+    .happend div div h2{
+        font-size: 50px;
+    }
+    .happend div div p{
+        font-size: 31px;
+        margin-left: 10px;
+        width: 500px;
+    }
+   /*work__plan pages*/
+   .work__plan__pages{
+    height: 2000px;
+   }
+   .title__pages{
+    font-size: 55px;
+    border-bottom: 3px solid silver;
+   }
+   .plan p{
+    font-size: 30px;
+   }
+   .plan h3{
+     font-size: 35px;
+   }
+   .plan ul li{
+    font-size: 25px;
+     
+   }
+   /*event__pages*/
+   .event__page{
+    height: 1200px;
+   }
+   .event__header img{
+    height: 300px;
+    width: 600px;
+   }
+   .event__header h1{
+    font-size: 50px;
+   }
+   .text{
+   text-align: center;
+   width: 875px;
+   margin: 0 auto;
+   }
+   .text p{
+    font-size: 20px;
+   }
+   /*footer*/
+    footer{
+        height: 166px;
+    }
+    footer h3{
+      position: relative;
+      bottom: 25px;
+      font-size: 40px;
+    }
+    footer ul{
+        gap: 215px;
+        position: relative;
+        top: 9px;
+    }
+    footer ul li a img{
+      height: 75px;
+      width: 75px;
+    }
+    
+}

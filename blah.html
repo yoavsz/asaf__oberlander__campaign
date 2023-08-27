@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <title>לוח שנה עם אירועים</title>
+    <meta charset="UTF-8">
+    <style>
+        /* Add your CSS styles here */
+
+    </style>
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevBtn">&lt;</button>
+            <h1 id="currentMonth">אוגוסט 2023</h1>
+            <button id="nextBtn">&gt;</button>
+            
+        </div>
+        <div class="note"> ימים שבהם אירועים בחודש הקרוב מסומנים באדום</div>
+        <div class="calendar-days"></div>
+        <div class="event-list">
+            <h2>אירועים</h2>
+            <div id="events"></div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const calendarDays = document.querySelector(".calendar-days");
+            const currentMonthText = document.getElementById("currentMonth");
+            const eventsContainer = document.getElementById("events");
+            const mark__list=[1,"אירוע 1",5,"אירוע 2",7,"אירוע 3"]
+            
+
+            const date = new Date();
+            let currentMonth = date.getMonth();
+            let currentYear = date.getFullYear();
+
+            function updateCalendar() {
+                const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+                const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+                
+                calendarDays.innerHTML = "";
+                 
+                for (let i = 0; i < firstDay; i++) {
+                    const emptyDay = document.createElement("div");
+                    calendarDays.appendChild(emptyDay);
+                }
+
+                for (let i = 1; i <= daysInMonth; i++) {
+                    const dayElement = document.createElement("div");
+                    dayElement.innerText = i;
+                    dayElement.classList.add("calendar-day");
+
+                    const currentDate = new Date(currentYear, currentMonth, i);
+                    if (currentDate.toDateString() === new Date().toDateString()) {
+                        dayElement.classList.add("current-day");
+                    }
+                    for (let j = 0; j < mark__list.length; j ++) {
+                     if (i === mark__list[j]) {
+
+                          dayElement.style.background = "red";
+                          let event = document.createElement("div");
+                          const eventDate = currentDate.toLocaleDateString("he", {
+                           day: "numeric",
+                           month: "numeric",
+                           year: "numeric"
+                          }).split('/').reverse().join('.');
+                          event.innerHTML = `${eventDate}: ${mark__list[j + 1]}`;
+                         eventsContainer.appendChild(event);
+                        }
+                    }
+
+                       
+         
+
+                    calendarDays.appendChild(dayElement);
+                }
+                
+
+                const hebrewMonthNames = ["ינואר", "פברואר", "מרץ", "אפריל", "מאי", "יוני", "יולי", "אוגוסט", "ספטמבר", "אוקטובר", "נובמבר", "דצמבר"];
+                currentMonthText.textContent = hebrewMonthNames[currentMonth] + " " + currentYear;
+            }
+
+            updateCalendar();
+
+            const prevBtn = document.getElementById("prevBtn");
+            prevBtn.addEventListener("click", function() {
+                currentMonth--;
+                if (currentMonth < 0) {
+                    currentMonth = 11;
+                    currentYear--;
+                }
+                updateCalendar();
+            });
+
+            const nextBtn = document.getElementById("nextBtn");
+            nextBtn.addEventListener("click", function() {
+                currentMonth++;
+                if (currentMonth > 11) {
+                    currentMonth = 0;
+                    currentYear++;
+                }
+                updateCalendar();
+            });
+        });
+    </script>
+    
+</body>
+</html>

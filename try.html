@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        input {
+            padding: 8px;
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        p {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Email Validation App</h1>
+        <input type="email" id="emailInput" placeholder="Enter your email">
+        <p id="validationMessage"></p>
+    </div>
+    <script>
+        const emailInput = document.getElementById("emailInput");
+        const validationMessage = document.getElementById("validationMessage");
+
+        emailInput.addEventListener("input", () => {
+            const email = emailInput.value;
+            if (isValidEmail(email)) {
+                validationMessage.textContent = "Valid email!";
+                validationMessage.style.color = "#2ecc71";
+            } else {
+                validationMessage.textContent = "Invalid email.";
+                validationMessage.style.color = "#e74c3c";
+            }
+        });
+
+        function isValidEmail(email) {
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(email);
+        }
+    </script>
+</body>
+</html>
